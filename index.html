@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PNCCloudLabs | Personal Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #111c32;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 60px 8%;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            max-width: 600px;
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #0284c7;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            width: fit-content;
+        }
+
+        section {
+            padding: 60px 8%;
+        }
+
+        section h2 {
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        .project {
+            background: #17243b;
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 500px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111c32;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            nav a {
+                margin-left: 8px;
+                font-size: 13px;
+            }
+        }
+   #skills ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+}
+
+#skills li {
+    background: #18243b;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #263653;
+    color: #e5e7eb;
+}
+
+#skills li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.skill-icon {
+    font-size: 32px;
+    min-width: 40px;
+}
+
+#skills li h3 {
+    color: #38bdf8;
+    margin-bottom: 6px;
+    font-size: 19px;
+}
+
+#skills li p {
+    font-size: 14px;
+    color: #cbd5e1;
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.project-item {
+    background: #18243b;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #263653;
+}
+
+.project-item h3 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.project-item p {
+    margin-bottom: 15px;
+    color: #cbd5e1;
+}
+
+.project-tech {
+    font-size: 14px;
+}
+
+.project-item a {
+    display: inline-block;
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.project-status {
+    color: #4ade80;
+    font-size: 13px;
+    font-weight: bold;
+}
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.contact-links a {
+    display: inline-block;
+    background: #0284c7;
+    color: white;
+    padding: 14px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-links a:hover {
+    background: #0369a1;
+}
+ </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">PNCCloudLabs</div>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="hero">
+            <h1>Hello, I'm <span>Prince.</span></h1>
+
+            <p>
+                Welcome to PNCCloudLabs.
+                I'm passionate about technology,
+                software development and cloud engineering.
+                I'm building my skills one project at a time.
+            </p>
+
+            <a href="#projects" class="button">
+                Explore My Work
+            </a>
+        </div>
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <p>
+                I'm Prince N. Chinwendu, also known as
+                The Writer PNC.
+
+                I'm currently developing my skills in
+                cloud engineering, Python programming,
+                Git and GitHub.
+
+                PNCCloudLabs is my technology learning
+                and development space.
+            </p>
+        </section>
+<section id="skills">
+    <h2>My Technical Skills</h2>
+
+    <p>Technologies I'm currently learning and developing:</p>
+
+<ul>
+    <li>
+        <span class="skill-icon">🌐</span>
+        <div>
+            <h3>HTML</h3>
+            <p>Learning to build and structure web pages.</p>
+        </div>
+    </li>
+
+    <li>
+        <span class="skill-icon">🎨</span>
+        <div>
+            <h3>CSS</h3>
+            <p>Learning website styling and responsive design.</p>
+        </div>
+    </li>
+
+    <li>
+        <span class="skill-icon">🐍</span>
+        <div>
+            <h3>Python</h3>
+            <p>Learning programming and automation.</p>
+        </div>
+    </li>
+
+    <li>
+        <span class="skill-icon">🔧</span>
+        <div>
+            <h3>Git</h3>
+            <p>Learning version control and source management.</p>
+        </div>
+    </li>
+
+    <li>
+        <span class="skill-icon">🐙</span>
+        <div>
+            <h3>GitHub</h3>
+            <p>Learning code hosting and collaboration.</p>
+        </div>
+    </li>
+
+    <li>
+        <span class="skill-icon">☁️</span>
+        <div>
+            <h3>Cloud Engineering</h3>
+            <p>Learning cloud infrastructure and deployment.</p>
+        </div>
+    </li>
+</ul>
+</section>
+
+        <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="project-item">
+            <h3>My First GitHub Project</h3>
+
+            <p>
+                My first practical project exploring Git,
+                GitHub, version control and website development.
+            </p>
+
+            <p class="project-tech">
+                Technologies: Git, GitHub, HTML
+            </p>
+
+            <a href="https://github.com/PNCCloudLabs/My-First-Git-Project"
+               target="_blank">
+                View on GitHub →
+            </a>
+        </div>
+
+        <div class="project-item">
+            <h3>PNCCloudLabs Personal Portfolio</h3>
+
+            <p>
+                My personal technology portfolio showcasing
+                my learning journey in programming,
+                web development and cloud engineering.
+            </p>
+
+            <p class="project-tech">
+                Technologies: HTML, CSS
+            </p>
+
+            <span class="project-status">In Progress</span>
+
+            <br><br>
+
+            <a href="https://github.com/PNCCloudLabs/My-First-Git-Project"
+               target="_blank">
+                View Source Code →
+            </a>
+        </div>
+
+    </div>
+</section>
+
+    </main>
+<section id="contact">
+    <h2>Let's Connect</h2>
+
+    <p>
+        Interested in technology, software development
+        or collaboration? I'd love to hear from you.
+    </p>
+
+    <div class="contact-links">
+
+        <a href="mailto:thewriterpnc@gmail.com">
+            📧 Email Me
+        </a>
+
+        <a href="https://wa.me/2349018042297"
+           target="_blank">
+            💬 WhatsApp Me
+        </a>
+
+        <a href="https://github.com/PNCCloudLabs"
+           target="_blank">
+            💻 Visit My GitHub
+        </a>
+
+    </div>
+</section>
+    <footer>
+        <p>&copy; <span id="year"></span> PNCCloudLabs. All Rights Reserved.
+        </p>        
+    </footer>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
